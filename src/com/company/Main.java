@@ -23,6 +23,7 @@ public class Main {
         int intFirst = Integer.parseInt(firstNumber);
         int intSecond = Integer.parseInt(secondNumber);
         int intResult = 0;
+        //Double allows for decimal
         //Double intFirst = Double.parseDouble (firstNumber);
         //Double intSecond = Double.parseDouble (secondNumber);
         //Double intResult = 0.0
@@ -32,7 +33,7 @@ public class Main {
         } else if (operator.equals("-") || operator.equals("subtract")) {
             intResult = intFirst - intSecond;
         } else if (operator.equals("*") || operator.equals("multiply")) {
-            intResult = intFirst * intSecond;
+            intResult = Multiplying(intFirst, intSecond);
         } else if (operator.equals("/") || operator.equals("divide")) {
             intResult = intFirst / intSecond;
 
@@ -52,6 +53,12 @@ public class Main {
         //}System.out.println("Have a nice day!");
 
     }
+    public static int Multiplying(int intFirst, int intSecond){
+        int intResult = intFirst * intSecond;
+        return intResult;
+
+    }
+
 }
 
 
